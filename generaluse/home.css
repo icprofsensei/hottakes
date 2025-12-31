@@ -6,7 +6,7 @@ div.parentcontainer div.threepartitions {
   width:33%;
   float:left;
   text-align: center;
-  box-shadow: inset 0px 0px 0px 1.5px rgb(1, 13, 117);
+  box-shadow: inset 0px 0px 0px 1.5px rgb(252, 113, 0);
   box-sizing: border-box;
   padding-left: 5%;
   padding-right: 5%;
@@ -16,26 +16,76 @@ div.parentcontainer div.twopartitions {
   width:50%;
   float:left;
   text-align: center;
-  box-shadow: inset 0px 0px 0px 1.5px rgb(1, 13, 117);
+  box-shadow: inset 0px 0px 0px 1.5px rgb(252, 113, 0);
   box-sizing: border-box;
   padding-left: 5%;
   padding-right: 5%;
 }    
 
 
+div.navbar{
+  cursor: pointer;
+  padding-top: 0%;
+  background-image:linear-gradient( to top, rgb(255, 223, 198), rgb(252, 113, 0));
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+.articletitle{
+  position: relative;
+  width: 100%;
+  color: rgb(250, 250, 250);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-/* Fonts */
+.titletext{
+  left: 50px;
+  right: 50px;
+}
+
+.dot{
+  height: 15px;
+  width: 15px;
+  background-color:rgb(250, 250, 250);;
+  border-radius: 50%;
+}
+
+#dot1{
+  position:absolute;
+  left: 5px;
+  top: 5px;
+  animation-name: dotslide1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+#dot2{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  animation-name: dotslide2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes dotslide1 {
+  from {left: 5%;}
+  to {left: 100%; display: none;}
+}
+@keyframes dotslide2 {
+  from {right: 5%;}
+  to {right: 100%; display: none;}
+}
+
+h1{
+  
+  text-align: center;
+}
 h2{
-    color: #07008d;
+    color: rgb(252, 113, 0);
 }
 
-
-#articletitle{
-    text-align: center;
-    font-family: 'Times New Roman', serif;
-    color: black;
-}
 
 
 
@@ -60,7 +110,9 @@ anychartjs-container{
 
 
 body {
-    background-color: #d1ddff;
+    background-color:rgb(255, 223, 198);
+    border-top: 10px solid rgb(252, 113, 0);
+    font-family: 'Times New Roman', serif;
 }
 
   
