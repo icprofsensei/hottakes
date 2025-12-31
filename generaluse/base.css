@@ -1,13 +1,19 @@
-canvas{
+canvas {
     width: 100%;
     height: 100%;
-    background-color: rgb(252, 113, 0);
-}
-@media (max-width: 900px){
-    canvas{
-        width: 900px;
-        height:1800px;
+    display: block; 
     background-color: rgb(252, 113, 0);
 }
 
+@media (max-width: 900px) {
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
