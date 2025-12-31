@@ -15,12 +15,20 @@ function setCanvasSize() {
     const rect = canvas.getBoundingClientRect();
     canvas.width = rect.width * dpr;
     canvas.height = rect.height * dpr;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.scale(dpr, dpr);
 }
 
 canvas = document.getElementById('lander');
 ctx = canvas.getContext('2d');
-setCanvasSize();
+setCanvasSize()
+console.log(screen.width, screen.height, canvas.width, canvas.height)
+// 375 667 750 1334
+if (canvas.width > screen.width){
+    var xscale = screen.width / canvas.width
+    var yscale = screen.height / canvas.height
+    ctx.scale(xscale, yscale)
+}
 
 let r = 1;
 
@@ -59,7 +67,6 @@ setInterval(function() {
             drawCircle(cx - vx, cy+ vy, r);
             vx += 5
             vy += 5
-            console.log(vx, vy)
             if ((cx - vx) <= 0 || (cx + vx) >= canvas.width ||
              (cy + vy) >= canvas.height || (cy - vy) <= 0 ){
                     setInterval(function(){
@@ -71,6 +78,7 @@ setInterval(function() {
                         }, ri+=0.1)
             }
             }, 5)
+            
 
             
     }
