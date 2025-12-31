@@ -86,8 +86,26 @@ h2{
     color: rgb(252, 113, 0);
 }
 
+h3{
+  margin-top: 30px;
+  padding-top: 10px;
+  padding: 5px;
+}
 
+li{
+  text-align: left;
+  font-family:'Times New Roman', serif;
+}
 
+.main-mission{
+  text-align: center;
+  background-color:rgb(252, 113, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1.3pc;
+}
+li.nav-item{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .subheader{
     font-size: 40px;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="generaluse/home.css">
+<title>Hot Takes Journalism</title>
+<style>
+section {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 100%; 
+}
+</style>
+</head>
+<body>
+    
+    <div id='navbar' class="wrapper">
+        
+    </div>
+    
+    
+    <hr>
+    <hr>
+    <div class="main-mission">
+    <p> Our Mission is very simple: We make raw, authentic opinion pieces, spanning technology, culture, the environment and wider society.</p>
+
+    <p > No Gen AI slop, no rip-off mainstream articles and no pay-wall.  </p>
+    </div>
+    <hr>
+    <div class="main-mission">
+    <h3>Authors:</h3>
+    </div>
+    <div class = 'parentcontainer'>
+        <div class = 'twopartitions'>
+            <h2>Dhylan Patel </h2> 
+            <hr> 
+            <p>Data Engineer and Website Design</p>
+                <button style="font-size:24px"><a href = "https://www.linkedin.com/in/dhylanpatel/"><i class="fa fa-linkedin-square"></i></a></button>
+            
+        </div>
+        <div class = 'twopartitions'>
+            <h2>Efua Boakye </h2> 
+            <hr>
+            <p>Writer and Lead Editor</p>
+                <button style="font-size:24px"><a href = "https://www.linkedin.com/in/efua-b-0789a5253/"><i class="fa fa-linkedin-square"></i></a></button>
+         
+        </div>
+
+    </div>
+    <hr>
+    <div class="main-mission">
+    <h3> The problem...
+    </h3>
+    </div>
+    
+    <div class = 'parentcontainer'>
+        <div class = 'threepartitions'>
+            <h2>The modern media landscape </h2> 
+            <hr>  
+            <p>Today, it seems like nothing can be taken at face value. There was a time when a photograph was all the authenticity we needed. With photo editing software, this was no longer possible but videos then seemed to provide an inscruitable source of truth. In recent years, this too has to be questioned. So as we fall back to a simpler time of journalistic verification, the line between truth and fake news continues to blur.   </p>
+        </div>
+        <div class = 'threepartitions'>
+            <h2>The social network problem </h2>    
+            <hr>
+            <p>As firm truths feel ever more slippery, more and more people turn to social media for their news. Turning to that basic human instinct of herd survival, we turn to each other for trust, reassurance and honesty about the world. Sadly, we are often met with a resounding echo-chamber of paranoia, fake news and hate (sometimes stirred by bot accounts operating without human users altogether). </p>
+        </div>
+        <div class = 'threepartitions'>
+            <h2>Facts, news and my opinion</h2> 
+            <hr>  
+            <p>Then, there is mainstream media. So often, the formerly (or supposedly) trustworthy sources of information let the public down. Failing to distinguish a journalist's predispositions, biases and opinions from the facts of an events, mainstream news outlets are failing. As readers turn their attention elsewhere, the tried and trusted recipe of negativity and fear-mongering no longers sells like it used to.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        fetch("navbar.html")
+    .then(res => res.text())
+
+    .then(html => {
+      document.getElementById("navbar").innerHTML = html;
+    })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src = "generaluse/navbar.js"> </script>
+</body>
+</html>
